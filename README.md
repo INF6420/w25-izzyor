@@ -6,7 +6,7 @@ A website for my book club.
 ## Wireframes
 
 
-### [Wireframe of Homepage](/Users/isabelleortiz/Documents/GitHub/w25-izzyor/wireframes/Homepage_wireframe 2.pdf)
+! [Wireframe of Homepage](wireframes/Homepage_wireframe.jpg)
 
 Header - will include name of book club and logo.
 
@@ -17,7 +17,7 @@ Main Content - will include brief description of book club and pictures from pas
 Footer - will include way to subscribe to newslater, book club's email and phone number, links to other pages, and links to social media profiles
 
 
-### [Wirefrane of About Page](/Users/isabelleortiz/Documents/GitHub/w25-izzyor/wireframes/about_wireframe 2.pdf)
+! [Wirefrane of About Page](wireframes/about_wireframe.jpg)
 
 Header - will include book club title
 
@@ -28,7 +28,7 @@ Main Content - will include history of how the book club started, a description 
 Footer - will include way to subscribe to newslater, book club's email and phone number, links to other pages, and links to social media profiles
 
 
-### [Wireframe of Contact Page](/Users/isabelleortiz/Documents/GitHub/w25-izzyor/wireframes/Contact_wireframe 2.pdf)
+! [Wireframe of Contact Page](wireframes/Contact_wireframe.jpg)
 
 Header - will include book club name 
 
