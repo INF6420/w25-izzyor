@@ -6,7 +6,7 @@ A website for my book club.
 ## Wireframes
 
 
-! [Wireframe of Homepage](wireframes/Homepage_wireframe.jpg)
+![Wireframe of Homepage](wireframes/Homepage_wireframe.jpg)
 
 Header - will include name of book club and logo.
 
@@ -17,7 +17,7 @@ Main Content - will include brief description of book club and pictures from pas
 Footer - will include way to subscribe to newslater, book club's email and phone number, links to other pages, and links to social media profiles
 
 
-! [Wirefrane of About Page](wireframes/about_wireframe.jpg)
+![Wirefrane of About Page](wireframes/about_wireframe.jpg)
 
 Header - will include book club title
 
@@ -28,7 +28,7 @@ Main Content - will include history of how the book club started, a description 
 Footer - will include way to subscribe to newslater, book club's email and phone number, links to other pages, and links to social media profiles
 
 
-! [Wireframe of Contact Page](wireframes/Contact_wireframe.jpg)
+![Wireframe of Contact Page](wireframes/Contact_wireframe.jpg)
 
 Header - will include book club name 
 
