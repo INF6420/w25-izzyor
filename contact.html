@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSRB - Book Club</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="" alt="BSRB book club logo">
-            <ul>
+        <nav class="main-menu">
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <ul class="nav-list">
+                <li><a href="index.html" class="logo"><img srch="images/logo-template.jpg" alt="logo-template"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
             </ul>
         </nav>
     </header>
-    <main>
-       <div class="box">
+        <div class="box">
             <div>
                 <h1> Get in Touch Today</h1>
                 <email> BSRB email address</email>
@@ -72,7 +78,6 @@
             </div>
             <div><button type="submit">Send</button></div>
        </div>
-    </main>    
         <footer>
             <div>
                 <h3>Subscribe to Newsletter</h3>
