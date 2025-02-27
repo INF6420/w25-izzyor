@@ -4,51 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSRB - Book Club</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="images/logo-placeholder-image.jpg" alt="BSRB book club logo">
-            <ul>
+        <nav class="main-menu">
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <ul class="main-nav">
+                <li><a href="index.html" class="logo"><img srch="images/logo-template.jpg" alt="logo-template"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            <div class="search-container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
             </ul>
         </nav>
     </header>
     <main>
         <div>
-            <h1>Book Club Name</h1>
-        </div>
-        <div><img src="images/bookclub1.jpg" alt="People holding open books"></div>
-        <div>
-            <h2>Section Title</h2>
-            <p>Description of Book CLub</p>
+            <h1 class="headingA">Bean Soup and the Rat Bastards</h1>
         </div>
         <div>
-            <h2>Section Title</h2>
+            <img src="images/bookclub1.jpg" alt="People holding open books" class="imageA">
+        </div>
+        <div>
+            <h2 class="headingB">Brief Description</h2>
+            <p class="pA">Description of Book Club</p>
+        </div>
+        <div>
+            <img src="images/Cantoras.jpg" alt="Next Book Club Read" class="imageB">
+        </div>
+        <div>
+            <h2 class="headingC">Section Title</h2>
             <p>About Next Book</p>
+            <a class= "button-outline" href="books.html"></a>
         </div>
-        <img src="images/Cantoras.jpg" alt="Next Book Club Read">
-    </main>    
-        <footer>
-            <div>
-                <h3>Subscribe to Newsletter</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="emailaddress" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
+    </main> 
+    <footer>
+        <div class="footer">
+            <h3>Subscribe to Newsletter</h3>
+            <div class="box">
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="emailaddress" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
             </div>
-            <div>
-               <email>email address</email> 
-               <telephone>telephone number</telephone>
-            </div>
-        </footer>
+        </div>
+        <div>
+            <ul>
+                <li><email>email address</email></li>
+                <li><telephone>telephone number</telephone></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
