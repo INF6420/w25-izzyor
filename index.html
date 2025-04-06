@@ -8,60 +8,65 @@
 </head>
 <body>
     <header>
-        <nav class="main-menu">
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <ul class="main-nav">
-                <li><a href="index.html" class="logo"><img srch="images/logo-template.jpg" alt="logo-template"></a></li>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
-            <div class="search-container">
-                <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
             </ul>
         </nav>
+        <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </header>
+    
     <main>
-        <div>
-            <h1 class="headingA">Bean Soup and the Rat Bastards</h1>
-        </div>
-        <div>
-            <img src="images/bookclub1.jpg" alt="People holding open books" class="imageA">
-        </div>
-        <div>
-            <h2 class="headingB">Brief Description</h2>
-            <p class="pA">Description of Book Club</p>
-        </div>
-        <div>
-            <img src="images/Cantoras.jpg" alt="Next Book Club Read" class="imageB">
-        </div>
-        <div>
-            <h2 class="headingC">Section Title</h2>
-            <p>About Next Book</p>
-            <a class= "button-outline" href="books.html"></a>
-        </div>
-    </main> 
-    <footer>
-        <div class="footer">
-            <h3>Subscribe to Newsletter</h3>
-            <div class="box">
-                <form action="#">
-                    <div class="form-box">
-                        <input type="text" name="emailaddress" placeholder="Enter your email">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                </form>
+        <h1>Bean Soup and the Rat Bastards</h1>
+        <section class="book-club-intro">
+            <div>
+                <img src="images/woman-reading.jpg" alt="Book club image">
             </div>
+            <div class="description">
+                <h2>Who We Are</h2>
+               <p>Bean Soup and the Rat Bastards (BSRB) is a laid-back, monthly book club. We explore a wide range of genres so there's something for everyone. Join us for  good books, thoughtful conversations, and yes-bean soup.</p>
+            </div>
+        </section>
+        <section class="next-book">
+            <div class="image-block">
+                <img src="images/Cantoras.jpg" class="next-book-image">
+            </div>
+            <div class="text-block">
+                <p>About Next Book Club Pick</p>
+            </div>
+        </section>
+    </main> 
+
+    <footer>
+        <div class="newsletter">
+            <label for="email">Subscribe to Newsletter:</label>
+            <input type="email" id="email" placeholder="Email">
+            <button>Subscribe</button>
         </div>
-        <div>
+        <div class="contact-info">
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@brandname.com</p>
+        </div>
+        <nav>
             <ul>
-                <li><email>email address</email></li>
-                <li><telephone>telephone number</telephone></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+        </nav>
+        <div class="social-media">
+            <div class="social-media">
+                <a href="instagram-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="twitter-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 </body>

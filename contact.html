@@ -8,76 +8,60 @@
 </head>
 <body>
     <header>
-        <nav class="main-menu">
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <ul class="nav-list">
-                <li><a href="index.html" class="logo"><img srch="images/logo-template.jpg" alt="logo-template"></a></li>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
-            <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
             </ul>
         </nav>
+        <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </header>
-        <div class="box">
-            <div>
-                <h1> Get in Touch Today</h1>
-                <email> BSRB email address</email>
-                <telephone>BSRB telephone number</telephone>
+
+    <main>
+        <div class="contact-container">
+            <div class="contact-info-box">
+                <h2>Get in Touch Today</h2>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@yourcompany.com</p>
+                <div class="social-media">
+                    <a href="https://instagram.com" target="_blank">📷</a>
+                    <a href="https://twitter.com" target="_blank">🐦</a>
+                </div>
             </div>
-            <div>
-                <h3>Full Name</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Full Name">
-                        </div>
-                    </form>
-            </div>
-            <div>
-                <h3>Email</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Email Address">
-                        </div>
-                    </form> 
-            </div>
-            <div>
-                <h3>Phone Number</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Phone Number">
-                        </div>
-                    </form>
-            </div>
-            <div>
-                <h3>Company (Optional)</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Company">
-                        </div>
-                    </form>
-            </div>
-            <div>
-                <h3>Message</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Message">
-                        </div>
-                    </form>
-            </div>
-            <div><button type="submit">Send</button></div>
-       </div>
+            <form action="https://formspree.io/f/xovepjoz" method="post">
+                <label>
+                    Your Name
+                    <input type="name" name="name">
+                </label>
+                <label>
+                    Phone Number
+                    <input type="phone number" name="phone number">
+                </label>
+                <label>
+                  Your email:
+                  <input type="email" name="email">
+                </label>
+                <label>
+                    Company (Optional)
+                    <input type="company" name="company">
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
         <footer>
             <div>
                 <h3>Subscribe to Newsletter</h3>
