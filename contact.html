@@ -10,7 +10,7 @@
     <header>
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a></li>
+                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
@@ -36,48 +36,55 @@
                     <a href="https://twitter.com" target="_blank">🐦</a>
                 </div>
             </div>
-            <form action="https://formspree.io/f/xovepjoz" method="post">
-                <label>
-                    Your Name
-                    <input type="name" name="name">
-                </label>
-                <label>
-                    Phone Number
-                    <input type="phone number" name="phone number">
-                </label>
-                <label>
-                  Your email:
-                  <input type="email" name="email">
-                </label>
-                <label>
-                    Company (Optional)
-                    <input type="company" name="company">
-                </label>
-                <label>
-                  Your message:
-                  <textarea name="message" rows="4" required></textarea>
-                </label>
-                <button type="submit">Send</button>
+            <form action="https://formspree.io/f/xovepjoz" method="post" class="validate">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" class="form-input" required>
+                </div>
+
+                <div>
+                    <label for="phone number">Phone Number</label>
+                    <input id="phone number" type="phone number" name="phone number" class="form-input" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="_replyto" class="form-input" required>
+                </div>
+                
+                <div>
+                    <label for="Company">Company (Optional)</label>
+                    <input id="company" type="text" name="company" class="form-input">
+                </div>
+               
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="4" class="form-input"></textarea>
+                </div>
+                
+                <div>
+                    <button type="submit" class="contact-submit">Send</button>
+                </div>
             </form>
         </div>
     </main>
 
-        <footer>
-            <div>
-                <h3>Subscribe to Newsletter</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="emailaddress" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
+    <footer>
+        <div>
+            <h3>Subscribe to Newsletter</h3>
+            <div class="box">
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="emailaddress" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
             </div>
-            <div>
-               <email>BSRB email address</email> 
-               <telephone>telephone number</telephone>
-            </div>
-        </footer>
+        </div>
+        <div>
+            <email>BSRB email address</email> 
+            <telephone>telephone number</telephone>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

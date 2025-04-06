@@ -165,61 +165,11 @@ footer {
     cursor: pointer;
 }
 
-.contact-info {
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-
 .social-media a {
     color: white;
     margin: 0 15px;
     font-size: 22px;
     text-decoration: none;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 50px 20px;
-    background: white;
-    border-radius: 10px;
-    max-width: 900px;
-    margin: 40px auto;
-    gap: 40px;
-}
-
-.contact-info-box {
-    flex: 1;
-    min-width: 250px;
-    text-align: left;
-    padding: 20px;
-}
-
-.contact-form {
-    flex: 2;
-    min-width: 300px;
-    padding: 20px;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .construction-container {
@@ -332,7 +282,79 @@ footer {
     margin: auto;
 }
 
-@media (max-width: 768px) {
+.contact-info {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.form-input {
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.form-input .contact-submit :focus {
+    outline: none;
+    border: 2px solid rgb(50, 48, 48);
+}   
+
+.contact-submit :hover {
+    background: #4C6444;
+}
+
+.contact-submit {
+    background:#c2d2bc;
+    color: black;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    margin: -1em 0 1.5em;
+}
+
+@media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         text-align: center;
@@ -369,7 +391,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .logo {
         font-size: 22px;
     }
