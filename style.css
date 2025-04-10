@@ -2,212 +2,409 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Young Serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
-    background-color: rgb(251, 247, 241);
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    background-color: rgb(248, 231, 209);
+    color: #333;
 }
 
-a {
-    color: black
-}
-
-image {
-    max-width: 100%;
-}
-
-.imageA {
-    width: 600px;
-    height: 500px;
-    float: left;
-    margin-left: 15px;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-}
-
-.imageB {
-    width: 260px;
-    height: 275px;
-    position: absolute;
-    float: right;
-    right: 150px;
-    top: 800px;
-    bottom: 80px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-}
-
-.headingA {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    text-align: center;
-}
-
-.headingB {
-    position: right;
-    margin-left: 700px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.headingC {
-    margin-top: 500px;
-    margin-left: 100px;
-    position: left;
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.pA {
-    position: right;
-    text-align: center;
-    margin-left: 700px;
-}
-
-.footer {
+body, html {
     width: 100%;
-    padding: 15px 100px;
-    color: rgb(47, 15, 15);
-    background-color: rgb(234, 199, 210);
-    position: fixed;
-    justify-content: space-between;
-    text-decoration: none;
-    align-items: center;
-    margin-top: 800px;
 }
 
-address {
-    font-style: normal;
-}
-
-@media screen and (main-width: 768px) {
-    header,
-    footer {
-        clear: both
-    }
-    main {
-        padding-top: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 1200 px;
-        margin: 0 auto;
-    }
-
-    .main-menu {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-
-    .site-name {
-        flex: 1 0 auto;
-    }
-}
-
-.main-nav {
-    width: 100%;
-    padding: 15px 100px;
-    color: rgb(47, 15, 15);
-    background-color: rgb(234, 199, 210);
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    text-decoration: none;
-    align-items: center;
-}    
-
-.main-nav {
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #4C6444;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 75px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.logo img {
+    width: 120px;
+    height: 80px;
+}
+
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
 }
 
-.main-nav li {
-    margin-right: 20px;
-}
-
-.main-nav li:last-child {
-    margin-right: 0;
-}
-
-.main-nav li a {
+nav ul li a {
+    color: rgb(50, 42, 35);
+    align-items: center;
+    padding: 15px;  
     text-decoration: none;
-    color:rgb(47, 15, 15);
-    font-size: 17px;
-    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+    gap: 30px;
 }
 
-.main-nav li a:hover {
-    color:rgb(227, 165, 185)
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    justify-content: flex-end;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-.main-menu .search-container {
-    float: right;
-}
-
-.main-nav input [type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17 px;
+.search-container input [type="text"] {
+    padding: 8px;
+    border-radius: 4px;
     border: none;
+    outline: none;
 }
 
-.main-menu .search-container button {
-    float: right;
-    padding: 6px 10 px;
-    margin-top: 8px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
+.search-bar button {
+    background: none;
     border: none;
     cursor: pointer;
 }
 
-.main-menu .search-container button:hover {
-    background: #ccc;
+main {
+    text-align: center;
 }
 
-.main-menu {
-    position: relative
+.book-club-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    background: transparent;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-.featured-text-container h1 {
-    height: 100 px;
-    margin: 0.5rem 0 1rem;
-    font-size: 1.4 rem;
+.next-book {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 10px;
+    background:rgb(193, 130, 75)
 }
 
-.featured-text-container p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2rem;
-    margin: 0.5rem 0 1rem
+.next-book .text-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: left;
 }
 
-.featured-image-container {
-    width: 60%;
-    margin: 0.5rem 0 2 rem
+.next-book .image-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button-outline {
-    border: 2px solid white;
-    border-radius: 4px;
-    padding: 0.6rem;
-    display: inline-block;
+.next-book-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #4C6444;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.newsletter input {
+    padding: 8px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 15px;
+    font-size: 22px;
     text-decoration: none;
+}
+
+.construction-container {
+    text-align: center;
+    background-color: rgb(248, 231, 209);
+    padding: 200px;
+    border-radius: 10px;
+}
+
+.construction-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.construction-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.construction-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.latest-pick, .previous-picks {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.latest-pick-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.latest-pick-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.previous-picks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pick-item {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+.pick-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.suggestions {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.suggestions h2 {
+    font-size: 1.2em;
+}
+
+.suggestions form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suggestions form label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.suggestions form input, .suggestions form textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.suggestions form button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.suggestions form button:hover {
+    background-color: #ff9900;
+}
+
+.section-box {
+    max-width: 200 px;
+    width: 100%;
+    margin: auto;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.form-input {
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.form-input .contact-submit :focus {
+    outline: none;
+    border: 2px solid rgb(50, 48, 48);
+}   
+
+.contact-submit :hover {
+    background: #4C6444;
+}
+
+.contact-submit {
+    background:#c2d2bc;
+    color: black;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.75rem
+    letter-spacing: 1px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    margin: -1em 0 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .book-club-intro, .next-book, .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-club-1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter input {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .newsletter input {
+        width: 85%;
+    }
+
+    .newsletter button {
+        width: 100px;
+    }
 }

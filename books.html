@@ -8,24 +8,67 @@
 </head>
 <body>
     <header>
-        <nav class="main-menu">
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <ul class="main-nav">
-                <li><a href="index.html" class="logo"><img srch="images/logo-template.jpg" alt="logo-template"></a></li>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
-            <div class="search-container">
-                <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
             </ul>
         </nav>
+        <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </header>
     <main>
+        <h1>Book Club Picks</h1>
+        <section class="latest-pick">
+            <h2>Latest Pick</h2>
+            <div class="latest-pick-content">
+                <img src="latest-book.jpg" alt="Latest Book Pick">
+                <div class="book-info">
+                    <h3>Book Title</h3>
+                    <p>Author: Author Name</p>
+                    <p>Description of the latest book pick. This section will include a brief description of the book and why it was chosen.</p>
+                </div>
+            </div>
+        </section>
+        <section class="previous-picks">
+            <h2>Previous Picks</h2>
+            <div class="previous-picks-grid">
+                <div class="pick-item">
+                    <img src="book1.jpg" alt="Book 1">
+                    <p>Book Title 1</p>
+                </div>
+                <div class="pick-item">
+                    <img src="book2.jpg" alt="Book 2">
+                    <p>Book Title 2</p>
+                </div>
+                <div class="pick-item">
+                    <img src="book3.jpg" alt="Book 3">
+                    <p>Book Title 3</p>
+                </div>
+            </div>
+        </section>
+        <section class="suggestions section-box">
+            <h2>Suggest a Book</h2>
+            <form action="/submit_suggestion" method="post">
+                <label for="book-title">Book Title:</label>
+                <input type="text" id="book-title" name="book-title" required>
+                
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                
+                <label for="description">Why are you recommending this book?</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>    
         <footer>
             <div>

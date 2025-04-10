@@ -8,92 +8,83 @@
 </head>
 <body>
     <header>
-        <nav class="main-menu">
-            <input class="menu-btn" type="checkbox" id="menu-btn">
-            <ul class="nav-list">
-                <li><a href="index.html" class="logo"><img srch="images/logo-template.jpg" alt="logo-template"></a></li>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
-            <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
             </ul>
         </nav>
+        <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
     </header>
-        <div class="box">
-            <div>
-                <h1> Get in Touch Today</h1>
-                <email> BSRB email address</email>
-                <telephone>BSRB telephone number</telephone>
-            </div>
-            <div>
-                <h3>Full Name</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Full Name">
-                        </div>
-                    </form>
-            </div>
-            <div>
-                <h3>Email</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Email Address">
-                        </div>
-                    </form> 
-            </div>
-            <div>
-                <h3>Phone Number</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Phone Number">
-                        </div>
-                    </form>
-            </div>
-            <div>
-                <h3>Company (Optional)</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Company">
-                        </div>
-                    </form>
-            </div>
-            <div>
-                <h3>Message</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="Message">
-                        </div>
-                    </form>
-            </div>
-            <div><button type="submit">Send</button></div>
-       </div>
-        <footer>
-            <div>
-                <h3>Subscribe to Newsletter</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="emailaddress" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
+
+    <main>
+        <div class="contact-container">
+            <div class="contact-info-box">
+                <h2>Get in Touch Today</h2>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@yourcompany.com</p>
+                <div class="social-media">
+                    <a href="https://instagram.com" target="_blank">📷</a>
+                    <a href="https://twitter.com" target="_blank">🐦</a>
                 </div>
             </div>
-            <div>
-               <email>BSRB email address</email> 
-               <telephone>telephone number</telephone>
+            <form action="https://formspree.io/f/xovepjoz" method="post" class="validate">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" class="form-input" required>
+                </div>
+
+                <div>
+                    <label for="phone number">Phone Number</label>
+                    <input id="phone number" type="phone number" name="phone number" class="form-input" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="_replyto" class="form-input" required>
+                </div>
+                
+                <div>
+                    <label for="Company">Company (Optional)</label>
+                    <input id="company" type="text" name="company" class="form-input">
+                </div>
+               
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="4" class="form-input"></textarea>
+                </div>
+                
+                <div>
+                    <button type="submit" class="contact-submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Subscribe to Newsletter</h3>
+            <div class="box">
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="emailaddress" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
             </div>
-        </footer>
+        </div>
+        <div>
+            <email>BSRB email address</email> 
+            <telephone>telephone number</telephone>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
