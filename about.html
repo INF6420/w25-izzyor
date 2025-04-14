@@ -18,9 +18,13 @@
             </ul>
         </nav>
         <div class="search-container">
-            <form action="/action_page.php">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <form action="/action_page.php" role="search">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." name="search" aria-label="Search input">
+                        <button type="submit" aria-label="Submit search">
+                            &#128269;
+                        </button>
+                </div>
             </form>
         </div>
     </header>

@@ -18,9 +18,13 @@
             </ul>
         </nav>
         <div class="search-container">
-            <form action="/action_page.php">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <form action="/action_page.php" role="search">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." name="search" aria-label="Search input">
+                        <button type="submit" aria-label="Submit search">
+                            &#128269;
+                        </button>
+                </div>
             </form>
         </div>
     </header>
@@ -28,7 +32,12 @@
         <div class="construction-container">
             <h1>Under Construction</h1>
             <p>We are currently working on this page. Please check back later.</p>
-            <img src="images/construction.jpg">
+            <img 
+                src="images/construction.jpg"
+                srcset="images/construction.jpg 300w, images/construction.jpg 600w, images/construction.jpg 1000w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                alt="construction"
+                loading="lazy">
         </div>
     </main>    
         <footer>
