@@ -18,9 +18,13 @@
             </ul>
         </nav>
         <div class="search-container">
-            <form action="/action_page.php">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <form action="/action_page.php" role="search">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." name="search" aria-label="Search input">
+                        <button type="submit" aria-label="Submit search">
+                            &#128269;
+                        </button>
+                </div>
             </form>
         </div>
     </header>
@@ -29,10 +33,15 @@
         <section class="latest-pick">
             <h2>Latest Pick</h2>
             <div class="latest-pick-content">
-                <img src="latest-book.jpg" alt="Latest Book Pick">
+                <img 
+                    src="images/Cantoras.jpg" 
+                    srcset="images/Cantoras.jpg 300w, images/Cantoras.jpg 600w, images/Cantoras.jpg 1000w"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                    alt="latest book pick"
+                    loading="lazy">
                 <div class="book-info">
-                    <h3>Book Title</h3>
-                    <p>Author: Author Name</p>
+                    <h3>Cantoras</h3>
+                    <p>By Carolina de Robertis </p>
                     <p>Description of the latest book pick. This section will include a brief description of the book and why it was chosen.</p>
                 </div>
             </div>
@@ -41,16 +50,31 @@
             <h2>Previous Picks</h2>
             <div class="previous-picks-grid">
                 <div class="pick-item">
-                    <img src="book1.jpg" alt="Book 1">
-                    <p>Book Title 1</p>
+                    <img
+                        src="images/my-year-of-rest-and-relaxation.jpg" 
+                        srcset="images/my-year-of-rest-and-relaxation.jpg 300w, images/my-year-of-rest-and-relaxation.jpg 600w, images/my-year-of-rest-and-relaxation.jpg 1000w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                        alt="Book 1"
+                        loading="lazy">
+                    <p>My Year of Rest and Relaxation</p>
                 </div>
                 <div class="pick-item">
-                    <img src="book2.jpg" alt="Book 2">
-                    <p>Book Title 2</p>
+                    <img
+                        src="images/like-water-for-chocolate.jpg" 
+                        srcset="images/like-water-for-chocolate.jpg 300w, images/like-water-for-chocolate.jpg 600w, images/like-water-for-chocolate.jpg 1000w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                        alt="Book 2"
+                        loading="lazy">
+                    <p>Like Water for Chocolate</p>
                 </div>
                 <div class="pick-item">
-                    <img src="book3.jpg" alt="Book 3">
-                    <p>Book Title 3</p>
+                    <img
+                        src="images/8-lives.jpg" 
+                        srcset="images/8-lives.jpg 300w, images/8-lives.jpg 600w, images/8-lives.jpg 1000w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                        alt="Book 3"
+                        loading="lazy">
+                    <p>8 Lives of a Century-Old Trickster</p>
                 </div>
             </div>
         </section>
