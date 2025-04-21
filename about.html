@@ -9,55 +9,69 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/bean-soup-black-4.png" alt="Logo">
+                </a>
+            </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
             </ul>
+            <div class="search-container">
+                <form action="/action_page.php" role="search" class="search-form">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." name="search" aria-label="Search input">
+                    </div>
+                </form>
+            </div>
         </nav>
-        <div class="search-container">
-            <form action="/action_page.php" role="search">
-                <div class="search-box">
-                    <input type="text" placeholder="Search..." name="search" aria-label="Search input">
-                        <button type="submit" aria-label="Submit search">
-                            &#128269;
-                        </button>
-                </div>
-            </form>
-        </div>
     </header>
+    
     <main>
-        <h1>About BSRP</h1>
+        <h1>Get To Know Us</h1>
        <section class="about-content">
         <div class="text-block">
-            <p>Some descriptive text about the brand.</p>
-            <p>More details about its mission, values, and history.</p>
-        </div>
-        <div class="image-placeholder"></div>
-        <div class="image-placeholder"></div>
-        <div class="text-block">
-            <p>Additional information about the brand.</p>
+            <div>
+                <h2>What We're All About</h2>
+                <p>Welcome to Bean Soup and the Rat Bastards, a once-a-month in-person book club. Each month, a different member picks the title and leads the discussion. We  explore a wide range of genres and voices and emphasize works by underrepresented authors and communities. Whethere we're diving deep into queer fantasy or dissecting gripping memories, we bring curiosity, candor, and compassion to our conversations (and plenty of snacks and bevvies).</p>
+            </div>
+            <div>
+               <h2>Our Mission and History</h2>
+                <p>We started BSRB on a whim, but it quickly grew into an important community circle for us. What began with just three members has grown over time. We're still a small group, but a dedicated and close-knit one. Our mission is to create a welcoming, judgement-free space for thoughtful conversation, mutual support, and a shared love of stories that inspire, amaze, or just make us laugh. Let's face it—not every book is going to be a winner, but we always find something enjoy or learn from in every story we read. We value inclusivity, empathy, and above all, making sure everyone has a good time.</p>
+            </div>
+            <div>
+                <h2>Stuff to Know</h2>
+                <p>Our next meeting will be Wednesday, May 7th but the location is still tbd. Send us a text to let us know if you can make it or not.</p>
+                <p>Coming soon: A spring-time potluck (following the theme is required) and a fantasy book swap. Keep an eye out for our next newsletter for more information on these events and other updates.</p>
+            </div>
         </div>
        </section>
     </main>    
     
     <footer>
-        <div>
-            <h3>Subscribe to Newsletter</h3>
-            <div class="box">
-                <form action="#">
-                    <div class="form-box">
-                        <input type="text" name="emailaddress" placeholder="Enter your email">
-                        <button type="submit">Subscribe</button>
-                    </div>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Subscribe to our newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
-        </div>
-        <div>
-            <email>email address</email> 
-            <telephone>telephone number</telephone>
+
+            <div class="footer-center">
+                <p><a href="tel:732-535-2875">732-535-2875</a></p>
+                <p><a href="mailto:isabelleortiz752@gmail.com">isabelleortiz752@gmail.com</a></p>
+            </div>
+
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

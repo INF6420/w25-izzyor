@@ -9,35 +9,34 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/bean-soup-black-4.png" alt="Logo">
+                </a>
+            </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
             </ul>
+            <div class="search-container">
+                <form action="/action_page.php" role="search" class="search-form">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." name="search" aria-label="Search input">
+                    </div>
+                </form>
+            </div>
         </nav>
-        <div class="search-container">
-            <form action="/action_page.php" role="search">
-                <div class="search-box">
-                    <input type="text" placeholder="Search..." name="search" aria-label="Search input">
-                        <button type="submit" aria-label="Submit search">
-                            &#128269;
-                        </button>
-                </div>
-            </form>
-        </div>
     </header>
 
     <main>
         <div class="contact-container">
             <div class="contact-info-box">
-                <h2>Get in Touch Today</h2>
-                <p>Phone: (123) 456-7890</p>
-                <p>Email: contact@yourcompany.com</p>
-                <div class="social-media">
-                    <a href="https://instagram.com" target="_blank">📷</a>
-                    <a href="https://twitter.com" target="_blank">🐦</a>
+                <div class="contact-description">
+                    <h2>Get in Touch Today!</h2>
+                    <p>Phone: (732) 535-2875</p>
+                    <p>Email:  isabelleortiz752@gmail.com</p>
                 </div>
             </div>
             <form action="https://formspree.io/f/xovepjoz" method="post" class="validate">
@@ -73,20 +72,26 @@
     </main>
 
     <footer>
-        <div>
-            <h3>Subscribe to Newsletter</h3>
-            <div class="box">
-                <form action="#">
-                    <div class="form-box">
-                        <input type="text" name="emailaddress" placeholder="Enter your email">
-                        <button type="submit">Subscribe</button>
-                    </div>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Subscribe to our newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
-        </div>
-        <div>
-            <email>BSRB email address</email> 
-            <telephone>telephone number</telephone>
+
+            <div class="footer-center">
+                <p><a href="tel:732-535-2875">732-535-2875</a></p>
+                <p><a href="mailto:isabelleortiz752@gmail.com">isabelleortiz752@gmail.com</a></p>
+            </div>
+
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>

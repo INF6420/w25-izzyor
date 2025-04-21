@@ -9,25 +9,27 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/bean-soup-black-4.png" alt="Logo">
+                </a>
+            </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="logo"><img src="images/bean-soup-black-4.png" alt="Logo"></a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li> 
             </ul>
+            <div class="search-container">
+                <form action="/action_page.php" role="search" class="search-form">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." name="search" aria-label="Search input">
+                    </div>
+                </form>
+            </div>
         </nav>
-        <div class="search-container">
-            <form action="/action_page.php" role="search">
-                <div class="search-box">
-                    <input type="text" placeholder="Search..." name="search" aria-label="Search input">
-                        <button type="submit" aria-label="Submit search">
-                            &#128269;
-                        </button>
-                </div>
-            </form>
-        </div>
     </header>
+    
     <main>
         <div class="construction-container">
             <h1>Under Construction</h1>
@@ -40,22 +42,28 @@
                 loading="lazy">
         </div>
     </main>    
-        <footer>
-            <div>
-                <h3>Subscribe to Newsletter</h3>
-                <div class="box">
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="emailaddress" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Subscribe to our newsletter</h3>
+                <form class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
-            <div>
-               <email>email address</email> 
-               <telephone>telephone number</telephone>
+
+            <div class="footer-center">
+                <p><a href="tel:732-535-2875">732-535-2875</a></p>
+                <p><a href="mailto:isabelleortiz752@gmail.com">isabelleortiz752@gmail.com</a></p>
             </div>
-        </footer>
+
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
